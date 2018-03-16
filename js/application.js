@@ -24,7 +24,7 @@ controllers.PasswordAppController = function ($scope){
             finalCharacters = finalCharacters.concat(symbols);
         }
         var passwordArray = [];
-        for (var i = 1; i < $scope.passwordLength; i++) {
+        for (var i = 0; i < $scope.passwordLength; i++) {
             passwordArray.push(finalCharacters[Math.floor(Math.random() * finalCharacters.length)]);
         };
         $scope.password = passwordArray.join("");
